@@ -59,7 +59,7 @@ def get_answer(content):
     answer = str(input(content))
     choice = 0
     while True:
-        if ' '.join(answer).isalpha() == False or answer == '' or choice == 'n':
+        if answer == '' or choice == 'n':
             print('\033[31mERROR! TRY AGAIN, PLEASE!\033[m' if choice != 'n' else '')
             answer = str(input(content))
             choice = 'y'
